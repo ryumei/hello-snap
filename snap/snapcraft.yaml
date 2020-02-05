@@ -14,7 +14,7 @@ apps:
 parts:
   gohello:
     plugin: go
-    go-importpath: github.com:ryumei/gohello
+    go-importpath: github.com/ryumei/gohello
     source: .
     source-type: git
     build-packages:
