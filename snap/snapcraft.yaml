@@ -1,7 +1,7 @@
 name: hello
 base: core18
 version: '2.10'
-summary: GNU Hlloe, the "hello world" snap
+summary: GNU Hello, the "hello world" snap
 description: |
   GNU hello prints a friendly greeting.
 grade: devel
