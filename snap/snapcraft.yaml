@@ -1,4 +1,4 @@
-name: hello
+name: hello-snap
 base: core18
 version: git
 summary: Hello again from Golang
@@ -8,13 +8,13 @@ grade: devel
 confinement: devmode
 
 apps:
-  hello:
-    command: bin/gohello
+  hell-snap:
+    command: hello-snap
 
 parts:
-  gohello:
+  hello-snap:
     plugin: go
-    go-importpath: github.com/ryumei/gohello
+    go-importpath: github.com/ryumei/hello-snap
     source: .
     source-type: git
     build-packages:
