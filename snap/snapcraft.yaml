@@ -8,7 +8,7 @@ grade: devel
 confinement: devmode
 
 apps:
-  hell-snap:
+  hello-snap:
     command: hello-snap
 
 parts:
