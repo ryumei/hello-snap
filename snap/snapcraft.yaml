@@ -1,17 +1,21 @@
 name: hello
 base: core18
-version: '2.10'
-summary: GNU Hello, the "hello world" snap
+version: git
+summary: Hello again from Golang
 description: |
-  GNU hello prints a friendly greeting.
+  hello prints a friendly greeting.
 grade: devel
 confinement: devmode
 
 apps:
   hello:
-    command: bin/hello
+    command: bin/gohello
 
 parts:
-  gnu-hello:
-    source: http://ftp.gnu.org/gnu/hello/hello-2.10.tar.gz
-    plugin: autotools
+  gohello:
+    plugin: go
+    go-importpath: github.com:ryumei/gohello
+    source: .
+    source-type: git
+    build-packages:
+      - gcc
